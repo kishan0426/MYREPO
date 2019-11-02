@@ -10,7 +10,7 @@ X_train, X_test, y_train, y_test = train_test_split(iris_dataset["data"], iris_d
 kn = KNeighborsClassifier(n_neighbors=1) 
 kn.fit(X_train, y_train) 
   
-x_new = np.array([[5, 2.9, 1, 0.5]]) 
+x_new = np.array([[5, 2.9, 1, 0.7]]) 
 prediction = kn.predict(x_new) 
   
 print("Predicted target value: {}\n".format(prediction)) 
